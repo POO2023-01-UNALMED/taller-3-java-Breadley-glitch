@@ -22,7 +22,7 @@ public class TV {
 	public void setMarca(Marca marc) {
 		marca = marc;
 	}
-	public Control getcontrol() {
+	public Control getControl() {
 		 return this.control;
 	 }
 	public void setControl(Control control) {
@@ -52,7 +52,7 @@ public class TV {
 		return numTV;
 	}
 
-	public void turnON() {
+	public void turnOn() {
 		this.estado = true;
 	}
 	

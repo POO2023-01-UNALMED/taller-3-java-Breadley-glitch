@@ -16,7 +16,7 @@ public class Control {
 		this.tv = tv;
 	}
 	public void turnOn() {
-		tv.turnON();
+		tv.turnOn();
 	}
 	public void turnOff() {
 		tv.turnOff();
