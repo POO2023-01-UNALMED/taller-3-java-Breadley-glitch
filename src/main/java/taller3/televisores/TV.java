@@ -89,5 +89,8 @@ public class TV {
 		return volumen;
 	
 	}
+	public static void setNumTV(int numTV){
+        TV.numTV = numTV;
+    }
 	}
 
