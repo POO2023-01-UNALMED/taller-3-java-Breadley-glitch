@@ -43,10 +43,13 @@ public class TV {
 	public int getCanal() {
 		return this.canal;
 	}
-	public void setCanal(int can) {
-		if (this.estado && canal >=1 && canal <=120) {
-			this.canal = can;
+	public void setCanal(int canal) {
+		if (this.estado) {
+			if(1 <= canal && canal <=120) {
+				this.canal = canal;
+			}
 		}
+
 	}
 	public static int getNumTV() {
 		return numTV;
@@ -64,13 +67,13 @@ public class TV {
 		return estado;
 	}
 	public int canalUp() {
-		if ((estado) && (canal<=120 || canal >=1)) {
+		if ((this.estado) && (canal<=120 || canal >=1)) {
 				return canal++;
 			}
 		return canal;
 	}
 	public int canalDown() {
-		if ((estado)&&( canal>=1 || canal <=120)) {
+		if ((this.estado)&&( canal>=1 || canal <=120)) {
 				canal-=1;
 			}
 		return canal;
