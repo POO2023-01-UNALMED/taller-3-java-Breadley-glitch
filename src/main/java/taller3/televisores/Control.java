@@ -9,7 +9,7 @@ public class Control {
 	}
 	
 	public TV getTv() {
-		return tv;
+		return this.tv;
 	}
 
 	public void setTv(TV tv) {
